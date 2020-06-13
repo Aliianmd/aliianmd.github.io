@@ -1,0 +1,171 @@
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 20%;   
+}
+.menu{
+    width: 70%;
+}
+.nav{
+    width: 15%;
+    list-style-type: none;
+    display: flex;
+    margin-top: 2.5%;
+    margin-left: 23.5%;
+    font-size: 12px;
+    justify-content: left space-between;
+}
+.nav li{
+    margin-left: 10%;
+}
+.number{
+    width: 20%;
+    list-style-type: none;
+    display: flex;
+    margin-top: -3%;
+    margin-left: 80%;
+    font-size: 15px;
+}
+button{
+    width: 15%;
+    margin-top: -3.7%;
+    margin-left: 99%;
+    color: red;
+}
+.Alex{
+    width: 5%;
+    margin-top: -6%;
+    margin-left: 50%;
+    justify-content: space-around;
+}
+h1{
+    width: -5%;
+    margin-top: -40%;
+    margin-left: 18%;
+    font-size: 65px;
+    font-style: initial;
+    justify-content: left;
+}
+h2{
+    width: -5%;
+    margin-top: -3%;
+    margin-left: 18%;
+    font-size: 20px;
+    font-style: initial;
+    text-justify: newspaper;
+}
+.name button{
+    width: 15%;
+    margin-top: 2%;
+    margin-left: 20%;
+    font-size: 13px;
+    color: red;
+}
+h3{
+    width: 20%;
+    margin-top: 18%;
+    margin-left: 41%;
+    font-size: 40px;
+}
+.selection{
+    width: 100%;
+}
+.cards{
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: -2%;
+    padding-bottom: 5%;
+}
+.card{
+    width: 25%;
+    margin-top: 6%;
+    margin-left: 20%;
+    margin-bottom: auto;
+    justify-content: space-between;
+}
+p{
+    width: 20%;
+    margin-top: 25%;
+    margin-left: 22%;
+}
+.button{
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 22%;
+}
+.text{
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 35%;
+    font-size: 50px;
+    font-style: initial;
+    justify-content: center;
+}
+section{
+    width: 100%;
+}
+.portfolios{
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: -2%;
+    padding-bottom: 5%;
+}
+.portfolio{
+    margin-top: 2%;
+    margin-bottom: auto;
+    margin-left: 5%;
+}
+.portfolio img{
+    width: 100%;
+}
+.portfolios p{
+    width: 80%;
+    margin-top: 25%;
+    margin-left: 22%;
+}
+section{
+    width: 100%;
+}
+.redbg{
+    background-color: red;
+}
+.textme{
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 2em;
+}
+footer{
+    width: 100%;
+    display: flex;
+}
+.contacts{
+    width: 20%;
+    margin-top: 2%;
+    margin-left: 15%;
+    list-style-type: none;
+    
+}
+.contacts p{
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 90%;
+}
+.last button{
+    width: 15%;
+    margin-top: -3.7%;
+    margin-left: 99%;
+    color: red;
+}
