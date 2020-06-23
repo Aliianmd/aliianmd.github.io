@@ -18,11 +18,16 @@ html, body{
     display: flex;
     margin-top: 2.5%;
     margin-left: 23.5%;
-    font-size: 12px;
+    font-size: 15px;
     justify-content: left space-between;
 }
-.nav li{
+.nav a{
+    font-size: 20px;
+    text-decoration: none;
     margin-left: 10%;
+}
+.nav a:hover{
+    color: red;
 }
 .number{
     width: 20%;
@@ -30,13 +35,24 @@ html, body{
     display: flex;
     margin-top: -3%;
     margin-left: 80%;
-    font-size: 15px;
+    font-size: 20px;
 }
-button{
+ button{
     width: 15%;
-    margin-top: -3.7%;
+    margin-top: -6%;
     margin-left: 99%;
-    color: red;
+    background-color: red;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    text-align: center;
+}
+.aliya:hover{
+    background-color: red;
+    border: 5px solid whitesmoke;
+    transition: 2s;
+    color: white;
 }
 .Alex{
     width: 5%;
@@ -51,6 +67,9 @@ h1{
     font-size: 65px;
     font-style: initial;
     justify-content: left;
+    animation-name: dima;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 h2{
     width: -5%;
@@ -59,13 +78,39 @@ h2{
     font-size: 20px;
     font-style: initial;
     text-justify: newspaper;
+    animation-name: dima;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes dima {
+    0%{
+    color: black;
+}
+25%{
+    color: green;
+}
+50%{
+    color: blue;
+}
+75%{
+    color: red;
+}
+100%{
+    color: yellow;
+}
 }
 .name button{
     width: 15%;
     margin-top: 2%;
     margin-left: 20%;
     font-size: 13px;
-    color: red;
+    color: white;
+}
+.name button:hover{
+    background-color: red;
+    border: 5px solid whitesmoke;
+    transition: 2s;
+    color: white;
 }
 h3{
     width: 20%;
@@ -73,34 +118,35 @@ h3{
     margin-left: 41%;
     font-size: 40px;
 }
-.selection{
+.mycards{
     width: 100%;
 }
 .cards{
-    width: 70%;
+    margin-left: 19%;
+    width: 80%;
     background-color: white;
-    margin: auto;
     display: flex;
-    justify-content: space-around;
-    padding-top: -2%;
-    padding-bottom: 5%;
+    
 }
 .card{
     width: 25%;
-    margin-top: 6%;
-    margin-left: 20%;
-    margin-bottom: auto;
+    margin-top: 10%;
+    
+}
+.cards p{
+    width: 30%;
+    text-align: center;
     justify-content: space-between;
 }
-p{
-    width: 20%;
-    margin-top: 25%;
-    margin-left: 22%;
-}
 .button{
-    width: 100%;
-    margin-top: 2%;
-    margin-left: 22%;
+    width: 20%;
+    background-color: red;
+    margin: auto;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    text-align: center;
 }
 .text{
     width: 40%;
@@ -110,7 +156,7 @@ p{
     font-style: initial;
     justify-content: center;
 }
-section{
+.myportfolio{
     width: 100%;
 }
 .portfolios{
@@ -131,41 +177,337 @@ section{
     width: 100%;
 }
 .portfolios p{
-    width: 80%;
-    margin-top: 25%;
-    margin-left: 22%;
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 10%;
+    justify-content: space-between;
+    display: flex;
 }
-section{
+.redbg{
     width: 100%;
 }
 .redbg{
     background-color: red;
+    background-size: 30%;
+    padding: 3%;
 }
 .textme{
-    width: 100%;
+    width: 70%;
     margin: auto;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;  
+    text-align: center;
 }
 footer{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
 }
 .contacts{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.contacts ul{
     width: 20%;
-    margin-top: 2%;
-    margin-left: 15%;
+    margin-left: 5%;
     list-style-type: none;
+    justify-content: space-between;
     
 }
-.contacts p{
-    width: 90%;
-    margin-top: 2%;
-    margin-left: 90%;
+.contacts a{
+    text-decoration: none;
+    color: black;
 }
-.last button{
-    width: 15%;
-    margin-top: -3.7%;
-    margin-left: 99%;
-    color: red;
+.contacts p{
+    width: 25%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+.contacts button{
+    width: 20%;
+    margin: auto;
+    background-color: red;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.button:hover{
+    background-color: red;
+    border: 5px solid whitesmoke;
+    transition: 2s;
+    color: white;
+}
+@media screen and (max-device-width:760px){
+    .menu{
+        width: 80%;
+        margin-left: -5%;
+        display: none;
+    }
+    .nav{
+        padding-top:15%;
+        
+    }
+    .menu .number{
+        width: 80%;
+        margin-left: 30%;
+        margin-top: 1%;
+    }
+    .menu .aliya{
+        margin-top: -12%;
+    }
+
+
+    #menu_toggle{
+        opacity: 0;
+    }
+    /*styled button*/
+    .menu_btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    
+        width: 25px;
+        height: 25px;
+    
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    /* add hamburger */
+    .menu_btn > span,
+    .menu_btn > span::before,
+    .menu_btn > span::after{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: grey;
+    }
+    .menu_btn > span::before{
+        content: '';
+        top: -8px;
+    }
+    .menu_btn > span::after{
+        content: '';
+        top: 8px;
+    }
+    .menu_box{
+        display: block;
+        position: fixed;
+        visibility: 0;
+        left: -100%;
+    
+        width: 300px;
+        height: 100%;
+    
+        margin: 0;
+        padding: 80px 0;
+    
+        list-style: none;
+        text-align: center;
+        background-color: indigo;
+    
+        box-shadow: 1px 0px 6px rgba(0,0,0, .2);
+    }
+    .menu_item{
+        display: block;
+        padding: 12px 24px;
+        color: red;
+    
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .menu_item:hover{
+        background-color: skyblue;
+    }
+    
+    #menu_toggle:checked ~ 
+    .menu_btn > span{
+        transform: rotate(45deg);
+    }
+    #menu_toggle:checked ~ 
+    .menu_btn > span::before{
+        top:0;
+        transform: rotate(0);   
+    }
+    #menu_toggle:checked ~ 
+    .menu_btn > span::after{
+        top:0;
+        transform: rotate(90deg);
+    }  
+    #menu_toggle:checked ~ .menu_box{
+        visibility: visible;
+        left: 0;
+
+
+    .Alex{
+        width: 50%;
+    }
+    .dim{
+        width: 50%;
+        margin-top: -60%;
+    }
+    h2{
+        font-size: 1.5em;
+        width: 25%;
+    }
+    h3{
+        width: 100%;
+    }
+    .cards{
+        margin: 60%;
+        margin-left: 15%;
+        margin-top: -5%;
+    }
+    .card img{
+        width: 50%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card p{
+        width: 50%;
+        margin-left: 1%;
+        font-size: 1em;
+    } 
+    .myportfolio .button{
+        margin-top: -50%;
+        margin-left: 45%;
+    }
+    .myportfolio .text{
+        font-size: 2em;
+        width: 80%;
+    }
+    .portfolios .portfolio img{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .textme p{
+        font-size: 0.8em;
+    }
+    .contacts ul{
+        width: 20%;
+        margin-left: -5%;
+    }
+    .contacts p{
+        width: 30%;
+        margin-top: 5%;
+    }
+    .contacts .button{
+        width: 30%;
+        margin-left: 15%;
+    }
+}
+@media screen and (max-device-width:420px){
+   .mycards{
+       background-color: white;
+   }
+   .nav{
+        padding-top: 15%;
+           
+   }
+   .nav a{
+       font-size: 3em;
+       margin-left: 15%;
+   }
+   .menu .number{
+       font-size: 3em;
+       margin-top: 5%;
+       margin-left: 45%;
+       width: 80%;
+       
+   }
+   .menu .aliya{
+        width: 50%;
+        margin-left: 50%;
+        margin-top: 2%;
+        font-size: 2em;
+    }
+   .name{
+       width: 70%;
+       margin-left: 10%;
+       margin-top: 35%;
+       text-align: center;
+       justify-content: space-between;
+   }
+   .name button{
+       width: 60%;
+       font-size: 2em;
+   }
+   .Alex{
+       display: none;
+   }
+   .name h2{
+       font-size: 2em;
+   }
+    .name h3{
+       width: 100%;
+       margin-left: 7%;
+       font-size: 3em;
+   }
+   .cards{
+        display: block;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        margin-left: 17%;
+    }
+    .card img{
+        width: 30%;
+    }
+    .card p{
+        width: 80%;
+        font-size: 1.5em;
+        text-align: center;
+        margin-left: -25%;
+    }
+    .button{
+        width: 40%;
+        font-size: 2em;
+    }
+    .text{
+        width: 100%;
+        margin-left: 22%;
+    }
+    .portfolios{
+        width: 100%;
+        display: block;
+    }
+    .portfolio{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .portfolio img{
+        width: 100%;
+    }
+    .portfolio p{
+        width: 80%;
+        text-align: center;
+        font-size: 3em;
+    }
+    .contacts{
+        width: 100%;
+        display: block;
+    }
+    .contacts p{
+        font-size: 1.3em;
+        margin-left: 1%;
+        text-align: center;
+        width: 100%;
+    }
+    .contacts ul{
+        font-size: 2em;
+        width: 100%;
+        margin-left: 35%;
+    }
+    .contacts p{
+        font-size: 2em;
+    }
 }
